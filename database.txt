@@ -1,0 +1,3 @@
+ 1 chips 300 100 
+ 2 Banana 50 10
+ 3 juice 80 20
