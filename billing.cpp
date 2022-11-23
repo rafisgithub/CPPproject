@@ -22,12 +22,13 @@ void shopping::menu(){
 	int choice;
 	string email;
 	string password;
-	cout<<"\t\t\t............................................\n";
+	cout<<"\t\t\t\t\t........................................\n";
+	cout<<"\t\t\t\t\t                                        \n";
 	cout<<"\t\t\t\t\t                                        \n";
 	cout<<"\t\t\t\t\t       Supermarket Main menu            \n";
 	cout<<"\t\t\t\t\t                                        \n";
 	cout<<"\t\t\t\t\t                                        \n";
-	cout<<"\t\t\t............................................\n";
+	cout<<"\t\t\t\t\t........................................\n";
 	cout<<"\t\t\t| 1)  Admistrator |\n";
 	cout<<"\t\t\t|                 |\n";
 	cout<<"\t\t\t| 2)  Buyer       |\n";
@@ -39,9 +40,9 @@ void shopping::menu(){
 	switch(choice){
 		case 1:
 			cout<<"\t\t\t Please login \n";
-			cout<<"\t\t\t Enter Email \n";
+			cout<<"Enter Email \n";
 			cin>>email;
-			cout<<"\t\t\t Enter password \n";
+			cout<<"Enter password \n";
 			cin>>password;
 			if(email=="rafi@gmail.com" && password=="1234"){
 				administrator();
