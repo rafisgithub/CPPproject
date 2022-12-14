@@ -72,8 +72,10 @@ void checkExamRoutine(){
 	cout<<"\tMath   \t\t\t 12/21/2022 \t\t\t 11:30-1:30\t\t\t theory.\n";
 	cout<<"\tOOPS   \t\t\t 12/24/2022 \t\t\t 11:30-1:30\t\t\t theory.\n";
 	cout<<"\tPhysics\t\t\t 12/26/2022 \t\t\t 11:30-1:30\t\t\t theory.\n";
+	cout<<"\n\n\n";
 }
  void english(){
+ 	system("color B5");
  	cout<<"Enter your name:\n";
 	cin.ignore();
 	getline(cin, name);
@@ -89,16 +91,17 @@ void checkExamRoutine(){
 	cout<<"4)write a Notice or Agenda\t marks ->10\n";
 	cout<<"5)write a cover Email or minutes.\t marks ->10\n";
 	cout<<"\n you have answer only four questions.\n";
+	cout<<"\n\n\n";
 
 }
 void math(){
+	system("color 0A");
 	cout<<"Enter your name:\n";
 	cin.ignore();
 	getline(cin, name);
 	cout<<"Enter your roll:\n";
 	cin.ignore();
 	getline(cin,roll);
-	system("color 0A");
 	cout<<"I hope you will get A+.\n";
 	cout<<"Topics Vector,General discussion of vector,and Line integral.\n";
 	cout<<"\nFrom vector.\n 1)Curl\n 2)Divergence\n 3)Gradient\n";
@@ -106,26 +109,26 @@ void math(){
 	cout<<"from line integral \n 1)calculate/evaluate a triangle or square or rectangle a  close integral equation.\n";
 }
 void oop(){
+	system("color 02");
 	cout<<"Enter your name:\n";
 	cin.ignore();
 	getline(cin, name);
 	cout<<"Enter your roll:\n";
 	cin.ignore();
 	getline(cin,roll);
-	system("color 02");
 	cout<<"I hope yo1u will get A+.\n";
 	cout<<"Topics.\n";
 	cout<<"1) What is oop?\n2) Polymorphism \n3) Encapsulation \n4) Abstruction \n5)And the most important for exam is Inheritance and it's classification.\n";
 	
 }
 void physic(){
+	system("color B5");
 	cout<<"Enter your name:\n";
 	cin.ignore();
 	getline(cin, name);
 	cout<<"Enter your roll:\n";
 	cin.ignore();
 	getline(cin,roll);
-	system("color B5");
 	cout<<"Topics:\n";
 	cout<<"1) Culomb's law.\n";
 	cout<<"2) Electric intensity and potential.\n";
@@ -134,13 +137,13 @@ void physic(){
 	cout<<"11)Magnetic Metarials.\n";
 }
 checkExamResult(){
+	system("color DF");
 	cout<<"Enter your name:\n";
 	cin.ignore();
 	getline(cin, name);
 	cout<<"Enter your roll:\n";
 	cin.ignore();
 	getline(cin,roll);
-	system("color DF");
 	srand(time(0));
 	cout<<"\t\t\t|#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#**#*#*#*#|\n";
 	cout<<"\t\t\t|                                          |\n";
