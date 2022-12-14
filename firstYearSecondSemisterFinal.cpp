@@ -133,6 +133,24 @@ void physic(){
 	cout<<"7) Biot-Savart law\n8) Apmperes law \n9) capacitor and capacitance math exercise \n10) electric field and electric field intensity exercise.\n";
 	cout<<"11)Magnetic Metarials.\n";
 }
+checkExamResult(){
+	cout<<"Enter your name:\n";
+	cin.ignore();
+	getline(cin, name);
+	cout<<"Enter your roll:\n";
+	cin.ignore();
+	getline(cin,roll);
+	system("color DF");
+	srand(time(0));
+	cout<<"\t\t\t|#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#**#*#*#*#|\n";
+	cout<<"\t\t\t|                                          |\n";
+	cout<<"\t\t\t|"<<"      Congratulaion "<<name<<"        |\n";
+	cout<<"\t\t\t|"<<"      Your CGPA:"<<3.95 + static_cast <float> (rand()) / ( static_cast <float> (RAND_MAX/(4.00-3.95)))<<"                                          |\n";
+	cout<<"\t\t\t|                                          |\n";
+	cout<<"\t\t\t|                                          |\n";
+	cout<<"\t\t\t|#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#**#*#*#*#|\n";
+	
+}
 };
 
 int main(){
@@ -140,6 +158,7 @@ int main(){
 	obj.SetColorAndBackground(15,1);
     obj.ClearConsoleToColors(15, 1);
     obj.Print();
+	while(1){
 	int choice;
 	cout<<"Please choose an option:\n";
 	cout<<"1)see exam routine.\n";
@@ -152,6 +171,9 @@ int main(){
 	switch(choice){
 		case 1:
 			obj.checkExamRoutine();
+			break;
+		case 2:
+			obj.checkExamResult();
 			break;
 		case 121:
 			obj.english();
@@ -167,6 +189,7 @@ int main(){
 	    	break;
 	    default:
 	    	cout<<"Are you blind?\n";
+	}
 	}
 	
 	getch();
