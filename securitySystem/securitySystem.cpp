@@ -7,7 +7,7 @@ using namespace std;
  
 int main(){
 	int a,i=0;
-	string txt, old, password1, password2, pass, name, password0, age, user, word,word1;
+	string txt, old, password1, password2, pass, name, password0, age, user, word,word1,text;
 	string creds[2], cp[2];
 	cout<<"      Security Seystem     "<<endl;
 	cout<<" .........................."<<endl<<endl;
@@ -45,7 +45,7 @@ int main(){
 			case 2:{
 				i=0;
 				cout<<"......................................\n\n";
-				cout<<"|............Register..................|\n\n";
+				cout<<"|............   LogIn   ..................|\n\n";
 				cout<<"|......................................|\n\n";
 				ifstream of2;
 				of2.open("file.txt");
@@ -87,7 +87,7 @@ int main(){
 					cout<<"Enter the old password.\n";
 					cin>>old;
 					if(of0.is_open()){
-						while(of0.is_eof()){
+						while(of0.eof()){
 							while(getline(of0, text)){
 								istringstream iss(text);
 								iss>>word1;
@@ -103,7 +103,7 @@ int main(){
 									cout<<"Enter you password again:-\n";
 									cin>>password2;
 									if(password1==password2){
-										of1.<<cp[0]<<"\n";
+										of1<<cp[0]<<"\n";
 										of1<<password1;
 										cout<<"Password changed successfully.\n";
 									}else{
@@ -112,16 +112,13 @@ int main(){
 										cout<<"Passwoed do not match.\n";
 									}
 								}
-							}else{
+							}
+							else{
 								cout<<"Please enter a valid password:-\n";
 								break;
 							}
 						}
 					}
-					
-					cout<<"...................Change password................\n";
-					
-					ifstream
 					
 					break;
 				}
@@ -132,8 +129,8 @@ int main(){
 				default:
 					cout<<"Enter a valid choice.\n";
 			}
-		}
-	}while(a!=4);
+	}
+	while(a!=4);
 	
 	
 	return 0;
