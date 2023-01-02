@@ -137,7 +137,7 @@ void physic(){
 	cout<<"11)Magnetic Metarials.\n";
 }
 checkExamResult(){
-	system("color DF");
+	system("color B0");
 	cout<<"Enter your name:\n";
 	cin.ignore();
 	getline(cin, name);
